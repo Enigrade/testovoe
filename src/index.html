@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"testovoe Putintsev G.A.",
+"description":"...",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+<div class="wrapper">
+	@@include('components/page-blocks/header/_header.html')
+	<main class="main">
+		<section class="banner">
+			<div class="wrap banner__wrap">
+				<div class="banner__content">
+					<h1 class="banner__title content__title">
+						Отправьте одну заявку на кредит или рассрочку сразу в несколько банков
+					</h1>
+					<div class="banner__text">
+						Менеджер свяжется с вами по телефону и расскажет об одобренных предложениях
+					</div>
+				</div>
+				<div class="banner__image">
+					<picture>
+						<source media="(min-width:993px)" srcset="img/banner-desktop.svg" width="470px">
+						<source media="(min-width:768px)" srcset="img/banner-desktop-tablet.svg" width="350px">
+						<source media="(min-width:300px)" srcset="img/banner-desktop-mob.svg" width="210px">
+						<img src="img/banner-desktop.svg" alt="" width="470px">
+					</picture>
+				</div>
+			</div>
+		</section>
+		<section class="section">
+			<div class="wrap section__wrap">
+				<div class="steps">
+					<div class="steps__title">
+						Шаг 1
+					</div>
+					<div class="steps__description">
+						Данные о Клиенте
+					</div>
+					<div class="steps__dots">
+						<div class="steps__dot steps__dot--active"></div>
+						<div class="steps__dot"></div>
+						<div class="steps__dot"></div>
+					</div>
+				</div>
+				<form class="form">
+					<div class="form__field">
+						<input type="text" class="form__input">
+						<span class="form__title">Фамилия</span>
+					</div>
+					<div class="form__field">
+						<input type="text" class="form__input">
+						<span class="form__title">Имя</span>
+					</div>
+					<div class="form__field form__field--checkbox">
+						<input type="text" class="form__input">
+						<span class="form__title">Отчество</span>
+						<div class="form__additional-field">
+							<div class="form__checkbox">
+								<input type="checkbox">
+								<div class="form__checkbox-ico"></div>
+								<div class="form__checkbox-text">Нет отчества</div>
+							</div>
+						</div>
+					</div>
+					<div class="form__field">
+						<select class="form__select" title="Выберите пол">
+							<option>Мужской</option>
+							<option>Женский</option>
+						</select>
+						<span class="form__title form__title--fixed">Пол</span>
+					</div>
+					<div class="form__field">
+						<input type="text" class="form__input">
+						<span class="form__title">Дата рождения</span>
+					</div>
+					<div class="form__field">
+						<input type="text" class="form__input">
+						<span class="form__title">Мобильный телфон</span>
+					</div>
+					<div class="form__field">
+						<input type="text" class="form__input">
+						<span class="form__title">Код проумоутера*</span>
+						<div class="form__additional-field">
+							<div class="form__description">Если есть</div>
+						</div>
+					</div>
+				</form>
+				<hr class="separator">
+				<div class="group">
+					<div class="group__info">
+					</div>
+					<div class="group__buttons">
+						<button class="button">Далее</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	@@include('components/page-blocks/footer/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+.file-loader {
+  background-color: $white-bg;
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  flex-grow: 1;
+  max-width: calc(50% - 10px);
+
+  @media(max-width: 768px) {
+    max-width: 100%;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 18px;
+    color: $black-text;
+    margin-bottom: 16px;
+  }
+
+  &__status {
+    color: $green;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 13px;
+  }
+
+  &__file {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+
+    &-text {
+      font-size: 12px;
+      color: $gray-text;
+    }
+  }
+}

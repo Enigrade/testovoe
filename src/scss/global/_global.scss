@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+
+	@media (min-width: 992px) and (max-width: 1172px) {
+		font-size: 1.2vw;
+	}
+}
+
+html,
+body {
+	min-height: 100%;
+	height: 100%;
+	position: relative;
+}
+
+body {
+	font-size: 16px;
+	font-family: Roboto, sans-serif;
+	font-weight: 400;
+	background-color: $white-light-bg;
+	color: $black-text;
+
+	@media(max-width: 768px) {
+		font-size: 14px;
+	}
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.wrap {
+	max-width: 938px;
+	width: 100%;
+	margin: 0 auto;
+
+	@media (max-width: 1024px) {
+		padding: 0 40px;
+	}
+
+	@media (max-width: 768px) {
+		padding: 0 20px;
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}

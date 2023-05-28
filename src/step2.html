@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"testovoe Putintsev G.A.",
+"description":"...",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+<div class="wrapper">
+  @@include('components/page-blocks/header/_header.html')
+  <main class="main">
+    <section class="section">
+      <div class="wrap section__wrap">
+        <div class="steps">
+          <div class="steps__title">
+            Шаг 2
+          </div>
+          <div class="steps__description">
+            Данные о товарной корзине
+          </div>
+          <div class="steps__dots">
+            <div class="steps__dot steps__dot--active"></div>
+            <div class="steps__dot steps__dot--active"></div>
+            <div class="steps__dot"></div>
+          </div>
+        </div>
+        <div>
+          <div class="card-good">
+            <form class="form card-good__form">
+              <div class="form__field">
+                <input type="text" class="form__input">
+                <span class="form__title form__title--card">Наименование товара</span>
+              </div>
+              <div class="form__field">
+                <input type="text" class="form__input">
+                <span class="form__title form__title--card">Стоимость</span>
+              </div>
+                <button class="button card-good__button button--plain button--ico">
+                  <svg class="icon icon--green icon--gray icon--s">
+                    <use xlink:href="img/sprite.svg#css--close"></use>
+                  </svg>
+                  <span>Удалить товар</span>
+                </button>
+            </form>
+          </div>
+          <div class="card-good">
+            <form class="form card-good__form">
+              <div class="form__field">
+                <input type="text" class="form__input">
+                <span class="form__title form__title--card">Наименование товара</span>
+              </div>
+              <div class="form__field">
+                <input type="text" class="form__input">
+                <span class="form__title form__title--card">Стоимость</span>
+              </div>
+                <button class="button card-good__button button--plain button--ico">
+                  <svg class="icon icon--green icon--gray icon--s">
+                    <use xlink:href="img/sprite.svg#css--close"></use>
+                  </svg>
+                  <span>Удалить товар</span>
+                </button>
+            </form>
+          </div>
+          <div class="card-good">
+            <form class="form card-good__form">
+              <div class="form__field">
+                <input type="text" class="form__input">
+                <span class="form__title form__title--card">Наименование товара</span>
+              </div>
+              <div class="form__field">
+                <input type="text" class="form__input">
+                <span class="form__title form__title--card">Стоимость</span>
+              </div>
+                <button class="button card-good__button button--plain button--ico">
+                  <svg class="icon icon--green icon--gray icon--s">
+                    <use xlink:href="img/sprite.svg#css--close"></use>
+                  </svg>
+                  <span>Удалить товар</span>
+                </button>
+            </form>
+          </div>
+        </div>
+        <div class="group group--between mt-3">
+          <div>
+            <div class="content_big">
+              Итого: <span class="content_green">147 800.55 руб.</span>
+            </div>
+          </div>
+          <div>
+            <button data-target="add-good" class="button button--slim button--plain button--ico modal-btn">
+              <svg class="icon icon--green">
+                <use xlink:href="img/sprite.svg#css--add"></use>
+              </svg>
+              Добавить товар
+            </button>
+          </div>
+        </div>
+        <hr class="separator">
+        <div class="group">
+          <div class="group__info">
+          </div>
+          <div class="group__buttons">
+            <button class="button button--plain button--ico">
+              <svg class="icon icon--green">
+                <use xlink:href="img/sprite.svg#css--arrow-back"></use>
+              </svg>
+              Назад
+            </button>
+            <button class="button">Далее</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include('components/page-blocks/footer/_footer.html')
+  @@include('components/page-blocks/_scripts.html')
+</div>
+<div class="modal" id="add-good">
+  <div class="modal__content">
+    <div class="modal__close">
+      <svg class="icon icon--green icon--gray icon--wide">
+        <use xlink:href="img/sprite.svg#css--close"></use>
+      </svg>
+    </div>
+    <div class="modal__title">
+      Создать товар
+    </div>
+      <div class="form__field mb-4">
+        <input type="text" class="form__input">
+        <span class="form__title">Название товара</span>
+      </div>
+      <div class="form__field mb-3">
+        <input type="text" class="form__input">
+        <span class="form__title">Стоимость</span>
+      </div>
+    <div class="modal__footer">
+      <button class="button">Добавить</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>

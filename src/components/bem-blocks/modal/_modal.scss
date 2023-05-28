@@ -1,0 +1,53 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 20;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  background-color: $modal;
+
+  @media(max-width: 768px) {
+    align-items: flex-end;
+  }
+
+  &__content {
+    min-width: 360px;
+    background-color: $white-bg;
+    border-radius: 10px;
+    padding: 35px 40px;
+    position: relative;
+
+    @media(max-width: 768px) {
+      width: 100%;
+      max-width: 100%;
+      box-shadow: 5px 0px 15px rgba(78, 84, 96, 0.16);
+    }
+  }
+
+  &__close {
+    top: 15px;
+    right: 15px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 21px;
+    margin-bottom: 45px;
+  }
+
+  &__footer {
+    text-align: center;
+  }
+
+  &--active {
+    display: flex
+  }
+}

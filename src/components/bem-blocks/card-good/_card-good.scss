@@ -1,0 +1,36 @@
+.card-good {
+  background-color: $white-bg;
+  border-radius: 10px;
+  padding: 20px 20px 0 40px;
+  margin-bottom: 10px;
+  position: relative;
+
+  @media (max-width: 768px) {
+    width: 100vw;
+    margin-left: -20px;
+    border-radius: 0;
+    padding: 70px 20px 10px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__button {
+    color: $gray-light-text;
+    font-size: 12px;
+    width: 100%;
+    justify-content: flex-end;
+    padding-bottom: 28px;
+
+    @media (max-width: 768px) {
+      position: absolute;
+      top: 15px;
+      right: 0;
+
+      span {
+        display: none;
+      }
+    }
+  }
+}

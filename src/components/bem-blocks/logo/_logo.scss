@@ -1,0 +1,13 @@
+.logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+
+  &__text {
+    color: $white-text;
+    font: 700 17px/1 Roboto, sans-serif;
+  }
+}

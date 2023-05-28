@@ -1,0 +1,28 @@
+.footer {
+  flex: 0 0 auto;
+  padding: 40px 0 60px;
+  background-color: $black-bg;
+
+  &__wrap {
+    max-width: 1320px;
+  }
+
+  &__name {
+    font: 400 16px/1 Roboto, sans-serif;
+    color: $white-text;
+    margin-bottom: 16px;
+    max-width: 500px;
+    @media (max-width: 768px) {
+    font-size: 12px;
+  }
+  }
+
+  &__description {
+    font: 400 16px/21px Roboto, sans-serif;
+    color: $gray-medium-text;
+    max-width: 500px;
+    @media (max-width: 768px) {
+    font-size: 12px;
+  }
+  }
+}

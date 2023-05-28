@@ -1,0 +1,63 @@
+.group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  &__info {
+    flex-grow: 1;
+    max-width: 50%;
+
+    @media (min-width: 768px) and (max-width: 992px) {
+      max-width: 45%;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
+  }
+
+  &__buttons {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 50px;
+    max-width: 50%;
+
+    @media (min-width: 768px) and (max-width: 992px) {
+      max-width: 55%;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      margin-top: 35px;
+    }
+  }
+
+  &--between {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      align-items: flex-start;
+      gap: 30px;
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  &--flex {
+    align-items: normal;
+    gap: 20px;
+  }
+}

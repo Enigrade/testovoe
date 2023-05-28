@@ -1,0 +1,45 @@
+.banner {
+  width: 100%;
+  background: linear-gradient(85.89deg, #D8E3ED 13.4%, #E5E7EB 97.35%);
+  overflow: hidden;
+
+  &__wrap {
+    position: relative;
+  }
+
+  &__content {
+    max-width: 535px;
+    padding: 80px 0;
+
+    @media (max-width: 768px) {
+      padding: 30px 0 60px 0;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+
+    @media (min-width: 993px) {
+      right: -100px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    max-width: 405px;
+  }
+
+  &__text {
+    font-size: 18px;
+    color: $gray-strong-text;
+    line-height: 24px;
+
+    @media (max-width: 768px) {
+      max-width: 187px;
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.button {
+  background-color: $green;
+  width: 220px;
+  height: 40px;
+  text-align: center;
+  color: $white-text;
+  outline: none;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  font-weight: 500;
+  font-size: 15px;
+  font-family: SFProText, sans-serif;
+  vertical-align: middle;
+
+  &:hover {
+    opacity: .85;
+  }
+
+  &--plain {
+    color: $green;
+    font-family: Roboto, sans-serif;
+    background-color: transparent;
+    width: auto;
+    height: auto;
+  }
+
+  &--ico {
+    display: flex;
+    align-items: center;
+  }
+
+  &--slim {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+    color: $black-text;
+
+    & .icon {
+      width: 24px;
+      height: 24px;
+      background-color: $green;
+      padding: 7px;
+      border-radius: 50%;
+      stroke: $white-text;
+    }
+
+    @media(max-width: 768px) {
+      border: 1px solid $gray-border-light;
+      border-radius: 10px;
+      width: 100%;
+      justify-content: center;
+      padding: 20px 0;
+    }
+  }
+
+  &--sm {
+    font-size: 12px;
+    height: 25px;
+    width: 100px;
+  }
+}

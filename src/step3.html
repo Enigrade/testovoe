@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"testovoe Putintsev G.A.",
+"description":"...",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+<div class="wrapper">
+  @@include('components/page-blocks/header/_header.html')
+  <main class="main">
+    <section class="section">
+      <div class="wrap section__wrap">
+        <div class="steps">
+          <div class="steps__title">
+            Шаг 3
+          </div>
+          <div class="steps__description">
+            Прикрепление изображений
+          </div>
+          <div class="steps__dots">
+            <div class="steps__dot steps__dot--active"></div>
+            <div class="steps__dot steps__dot--active"></div>
+            <div class="steps__dot steps__dot--active"></div>
+          </div>
+        </div>
+        <h3 class="content__section-title mb-1">
+          Паспорт
+        </h3>
+        <div class="mb-3 content_gray">Старайтесь не закрывать пальцами данные и фотографировать при хорошем освещении</div>
+        <div class="group group--flex mb-6">
+          <div class="file-loader">
+            <div class="file-loader__ico">
+              <img src="img/file1.svg" alt="">
+            </div>
+            <div class="file-loader__content">
+              <div class="file-loader__title">
+                Разворот паспорта с фотографией
+              </div>
+              <div class="file-loader__status">
+                Загружено
+              </div>
+              <div class="file-loader__file">
+                <div class="file-loader__file-text">
+                  паспорт1.jpeg
+                </div>
+                <div class="file-loader__file-ico">
+                  <button class="button button--plain button--ico">
+                    <svg class="icon icon--red icon--s">
+                      <use xlink:href="img/sprite.svg#css--close"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="file-loader">
+            <div class="file-loader__ico">
+              <img src="img/file2.svg" alt="">
+            </div>
+            <div class="file-loader__content">
+              <div class="file-loader__title">
+                Разворот паспорта с пропиской
+              </div>
+              <button class="button button--sm">Загрузить</button>
+            </div>
+          </div>
+        </div>
+        <h3 class="content__section-title mb-1">
+          Ваша фотография
+        </h3>
+        <div class="mb-3 content_gray">Старайтесь держать камеру на уровне глаз и фотографировать при хорошем освещении</div>
+        <div class="group group--flex mb-6">
+          <div class="file-loader">
+            <div class="file-loader__ico">
+              <img src="img/file2.svg" alt="">
+            </div>
+            <div class="file-loader__content">
+              <div class="file-loader__title">
+                Разворот паспорта с пропиской
+              </div>
+              <button class="button button--sm">Загрузить</button>
+            </div>
+          </div>
+        </div>
+        <hr class="separator">
+        <div class="group">
+          <div class="group__info">
+            <div class="form__checkbox">
+              <input type="checkbox">
+              <div class="form__checkbox-ico"></div>
+              <div class="form__checkbox-text">
+                <a href="" class="link">
+                  Соглашаюсь с Правилами заполнения заявки и присоединяюсь к Соглашению об использовании ПЭП
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="group__buttons">
+            <button class="button button--plain button--ico">
+              <svg class="icon icon--green">
+                <use xlink:href="img/sprite.svg#css--arrow-back"></use>
+              </svg>
+              Назад
+            </button>
+            <button class="button">Далее</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include('components/page-blocks/footer/_footer.html')
+  @@include('components/page-blocks/_scripts.html')
+</div>
+</body>
+</html>
